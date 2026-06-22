@@ -1,0 +1,21 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="ringGradient" x1="30" y1="100" x2="170" y2="100"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#D414B8" />
+            <stop offset="45%" stop-color="#5538D9" />
+            <stop offset="100%" stop-color="#00B7FF" />
+        </linearGradient>
+    </defs>
+
+    <!-- <rect width="200" height="200" fill="#020B2B" /> -->
+
+    <circle
+        cx="100"
+        cy="100"
+        r="74"
+        stroke="url(#ringGradient)"
+        stroke-width="12"
+        stroke-linecap="round"
+    />
+</svg>
