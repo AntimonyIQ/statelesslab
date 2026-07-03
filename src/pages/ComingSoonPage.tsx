@@ -1,44 +1,45 @@
 import { motion } from 'framer-motion'
 
-type ComingSoonPageProps = {
-  title: string
+function ArrowIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      className="h-4 w-4"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M3.333 8H12.667M12.667 8L8.667 4M12.667 8L8.667 12"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
 }
 
-export function ComingSoonPage({ title }: ComingSoonPageProps) {
+export function ComingSoonPage() {
   return (
-    <main className="min-h-screen px-4 pt-36 pb-16 md:px-6 md:pt-44">
+    <main className="flex min-h-screen items-center justify-center bg-[#f7f4ee] px-6 py-16 text-[#07142f]">
       <motion.section
-        className="mx-auto flex min-h-[68vh] w-full max-w-[1500px] flex-col justify-between rounded-[2rem] border border-[#07142f]/10 bg-[#f8f5ee] p-6 shadow-[0_40px_120px_rgba(7,20,47,0.08)] md:rounded-[3rem] md:p-10 lg:p-14"
-        initial={{ opacity: 0, y: 32 }}
+        className="w-full max-w-3xl text-center"
+        initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       >
-        <div className="flex items-center justify-between gap-6 text-[0.72rem] font-semibold tracking-[0.16em] text-[#06112b]/60 uppercase">
-          <span>{title}</span>
-          <span>Coming soon</span>
-        </div>
-        <div className="max-w-5xl">
-          <p className="mb-5 text-sm font-semibold tracking-[0.16em] text-[#102f68] uppercase">
-            Stateless Technology Limited
-          </p>
-          <h1 className="text-[clamp(4rem,14vw,12rem)] leading-[0.82] font-extrabold tracking-[-0.105em] text-[#06112b]">
-            {title}
-            <br />
-            is coming.
-          </h1>
-        </div>
-        <div className="grid gap-6 border-t border-[#07142f]/10 pt-7 text-[#667085] md:grid-cols-[1fr_auto] md:items-end">
-          <p className="max-w-xl text-lg leading-[1.65]">
-            This route is prepared for the full page experience. For now, return to the landing page
-            to explore the complete overview.
-          </p>
-          <a
-            className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#06112b] px-6 text-sm font-extrabold text-white transition hover:-translate-y-0.5"
-            href="/"
-          >
-            Back to home
-          </a>
-        </div>
+        <h1 className="text-[clamp(2.75rem,8vw,5.5rem)] font-semibold tracking-[-0.06em]">
+          Stateless techonlogy
+        </h1>
+
+        <a
+          className="mt-10 inline-flex items-center gap-3 text-base text-[#07142f] underline underline-offset-4 transition hover:opacity-70"
+          href="mailto:business@statelesslab.com"
+        >
+          <ArrowIcon />
+          <span>business@statelesslab.com</span>
+        </a>
       </motion.section>
     </main>
   )

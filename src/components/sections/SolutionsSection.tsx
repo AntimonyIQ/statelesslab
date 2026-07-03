@@ -17,8 +17,9 @@ export function SolutionsSection() {
       <div className="grid gap-5 px-4 md:px-8 lg:px-12">
         {solutions.map((solution, index) => (
           <motion.a
-            className="group relative mx-auto grid min-h-[78vh] w-full max-w-[1500px] overflow-hidden rounded-[2rem] bg-[#06112b] text-white shadow-[0_40px_120px_rgba(7,20,47,0.14)] md:rounded-[3rem]"
+            className="group relative mx-auto grid min-h-[78vh] w-full max-w-[1500px] overflow-hidden rounded-[2rem] bg-[#06112b] text-white shadow-[0_40px_120px_rgba(7,20,47,0.14)] ring-1 ring-white/35 md:rounded-[3rem]"
             href="/solutions"
+            data-cursor="Open"
             key={solution.title}
             initial={{ opacity: 0, y: 70, clipPath: 'inset(16% 0% 0% 0%)' }}
             whileInView={{ opacity: 1, y: 0, clipPath: 'inset(0% 0% 0% 0%)' }}

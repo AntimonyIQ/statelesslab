@@ -13,7 +13,7 @@ export function Header() {
 
   return (
     <motion.header
-      className="fixed top-0 left-0 z-50 flex min-h-[86px] w-full items-center justify-between gap-8 border-b border-[#06112b]/10 bg-[#f4f1e9]/80 px-4 backdrop-blur-2xl md:px-8 lg:min-h-[96px] lg:px-12"
+      className="fixed top-0 left-0 z-50 flex min-h-[86px] w-full items-center justify-between gap-8 border-b border-[#06112b]/10 bg-[#f4f1e9]/65 px-4 backdrop-blur-2xl md:px-8 lg:min-h-[96px] lg:px-12"
       initial={{ opacity: 0, y: -24 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
@@ -22,6 +22,7 @@ export function Header() {
         className="inline-flex min-w-0 items-center gap-3 whitespace-nowrap text-[0.9rem] font-extrabold tracking-[-0.035em]"
         href="/"
         aria-label="Stateless Technology home"
+        data-cursor="Home"
         onClick={closeMenu}
       >
         <img
@@ -51,6 +52,7 @@ export function Header() {
             className="group relative px-3 py-[15px] transition hover:text-[#102f68] lg:p-0"
             key={link.href}
             href={link.href}
+            data-cursor="Open"
             onClick={closeMenu}
           >
             {link.label}
@@ -60,6 +62,7 @@ export function Header() {
         <a
           className="mt-3 inline-flex min-h-12 items-center justify-center rounded-full bg-[#06112b] px-5 text-sm font-extrabold text-white transition hover:-translate-y-0.5 lg:mt-0"
           href="/contact"
+          data-cursor="Start"
           onClick={closeMenu}
         >
           Start a Project

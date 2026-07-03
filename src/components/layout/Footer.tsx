@@ -23,6 +23,7 @@ export function Footer() {
           <a
             className="mt-10 inline-flex min-h-14 items-center justify-center rounded-full bg-white px-7 text-sm font-extrabold text-[#06112b] transition hover:-translate-y-0.5"
             href="/contact"
+            data-cursor="Contact"
           >
             Contact us
           </a>
@@ -35,6 +36,7 @@ export function Footer() {
           className="inline-flex items-center gap-3 whitespace-nowrap text-[0.88rem] font-extrabold tracking-[-0.03em]"
           href="/"
           aria-label="Stateless Technology home"
+          data-cursor="Home"
         >
           <img
             src={logo}
@@ -53,13 +55,15 @@ export function Footer() {
         aria-label="Footer navigation"
       >
         {navLinks.map((link) => (
-          <a key={link.href} href={link.href}>
+          <a key={link.href} href={link.href} data-cursor="Open">
             {link.label}
           </a>
         ))}
       </nav>
         <div className="grid gap-2 text-sm font-semibold lg:text-right">
-          <a href="mailto:hello@statelesstechnology.com">hello@statelesstechnology.com</a>
+          <a href="mailto:hello@statelesstechnology.com" data-cursor="Email">
+            hello@statelesstechnology.com
+          </a>
           <span>Lagos, Nigeria</span>
         </div>
         <p className="mt-[18px] border-t border-white/15 pt-7 text-[0.82rem] lg:col-span-2">

@@ -9,7 +9,8 @@ const headline = [
 
 export function AboutSection() {
   return (
-    <AnimatedSection className="px-4 py-24 md:px-8 lg:px-12 lg:py-36">
+    <AnimatedSection className="relative px-4 py-24 md:px-8 lg:px-12 lg:py-36">
+      <div className="pointer-events-none absolute inset-x-4 top-0 h-px bg-[#06112b]/10 md:inset-x-8 lg:inset-x-12" />
       <div className="mx-auto max-w-[1450px] text-center">
         <p className="mb-8 text-xs font-semibold tracking-[0.18em] text-[#06112b]/45 uppercase">
           About Stateless Technology

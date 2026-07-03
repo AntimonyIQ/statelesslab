@@ -5,8 +5,9 @@ import { images, processSteps } from '../../data/siteContent'
 export function ApproachSection() {
   return (
     <AnimatedSection
-      className="mx-auto w-[min(1180px,calc(100vw-32px))] py-[78px] md:w-[min(1180px,calc(100vw-48px))] lg:py-[clamp(86px,12vw,150px)]"
+      className="relative mx-auto w-[min(1180px,calc(100vw-32px))] py-[78px] md:w-[min(1180px,calc(100vw-48px))] lg:py-[clamp(86px,12vw,150px)]"
     >
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-[#06112b]/10" />
       <div className="mb-[54px] max-w-[820px]">
         <span className="inline-flex items-center gap-2.5 text-xs font-extrabold tracking-[0.14em] text-[#102f68] uppercase before:h-px before:w-[34px] before:bg-current before:content-['']">
           Our approach

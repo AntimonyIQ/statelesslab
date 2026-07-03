@@ -13,11 +13,11 @@ export function Hero() {
         transition={{ duration: 1.8, ease: [0.22, 1, 0.36, 1] }}
       >
         <img className="h-full w-full object-cover" src={images.hero} alt="" aria-hidden="true" />
-        <div className="absolute inset-0 bg-[#f4f1e9]/75" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_18%,rgba(16,47,104,0.16),transparent_34rem),linear-gradient(180deg,rgba(244,241,233,0)_0%,#f4f1e9_92%)]" />
+        <div className="absolute inset-0 bg-[#f4f1e9]/65" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_72%_18%,rgba(16,47,104,0.14),transparent_34rem),linear-gradient(180deg,rgba(244,241,233,0)_0%,#f4f1e9_92%)]" />
       </motion.div>
 
-      <div className="relative z-10 mx-auto grid w-full max-w-[1500px] gap-10">
+      <div className="relative z-10 mx-auto grid w-full max-w-[1500px] gap-10 mix-blend-multiply">
         <motion.p
           className="text-xs font-semibold tracking-[0.18em] text-[#06112b]/55 uppercase"
           initial={{ opacity: 0, y: 18 }}
@@ -59,6 +59,7 @@ export function Hero() {
           <a
             className="group inline-flex items-center gap-3 text-[0.84rem] font-extrabold text-[#06112b]"
             href="/solutions"
+            data-cursor="Explore"
           >
             Explore our solutions
             <span className="h-px w-14 bg-current transition duration-300 group-hover:w-20" />

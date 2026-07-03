@@ -48,7 +48,7 @@ function Counter({ value, suffix }: CounterProps) {
 export function StatsSection() {
   return (
     <section
-      className="mx-auto grid max-w-[1220px] grid-cols-1 gap-12 px-4 py-10 md:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20 lg:px-12 lg:py-24"
+      className="mx-auto grid max-w-[1220px] grid-cols-1 gap-12 px-4 py-10 backdrop-blur-[1px] md:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20 lg:px-12 lg:py-24"
       aria-label="Company metrics"
     >
       <motion.p
