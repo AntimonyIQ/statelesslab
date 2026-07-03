@@ -30,7 +30,7 @@ export function ComingSoonPage() {
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       >
         <h1 className="text-[clamp(2.75rem,8vw,5.5rem)] font-semibold tracking-[-0.06em]">
-          Stateless techonlogy
+          Stateless Techonlogy
         </h1>
 
         <a
