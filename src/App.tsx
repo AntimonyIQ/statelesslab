@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { ComingSoonPage } from './pages/ComingSoonPage'
+import { ComingSoonPage } from './pages/Index'
 
 function App() {
   useEffect(() => {
